@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
+
+
 const Otsikko = ()=>{
     return (
         <h1>anna palautetta</h1>
     )
 }
+
 const Nappulat = ({handleGood, handleNeutral, handleBad}) => {
     return (
         <span>
@@ -14,7 +17,6 @@ const Nappulat = ({handleGood, handleNeutral, handleBad}) => {
         </span>
     )
 }
-
 
 const Button = ({teksti,handleClick}) => {
     return (
@@ -34,13 +36,7 @@ const Statistics = ({good, neutral, bad}) => {
 
     if(summa === 0){
         return(
-            <p>Ei yhtään palautetta annettu
-                
-
-
-
-            </p>
-            
+            <p>Ei yhtään palautetta annettu</p>
         )
     } else {
         return(
@@ -79,9 +75,7 @@ const Statistics = ({good, neutral, bad}) => {
 
             </div>
         )
-    }
-
-    
+    }  
 }
 
 
